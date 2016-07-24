@@ -1,21 +1,33 @@
 setup:
+
+```
     cd <source folder>
     virtualenv -p python3 env
     source env/bin/activate
     pip install -r requirements.txt
+```
 
 run:
+
+```
     python app.py
+```
 
 test:
+
+```
     python test.py
+```
 
 test endpoints:
+
+```
     curl -X POST http://localhost:5000/api/transfer/Joe/1/BigBag/to/Mick/2/MoneyPile/amount/1
     curl http://localhost:5000/api/account/1/balance
     curl http://localhost:5000/api/person/Mick/balance
     curl http://localhost:5000/api/bank/BigBag/balance
     curl http://localhost:5000/api/transactions
+```
 
 
 
