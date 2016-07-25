@@ -19,7 +19,7 @@ test:
     python test.py
 ```
 
-test endpoints:
+api test endpoints:
 
 ```
     curl -X POST http://localhost:5000/api/transfer/Joe/1/BigBag/to/Mick/2/MoneyPile/amount/1
@@ -40,7 +40,7 @@ Assumptions and things out of scope:
     These entities have no responsibilities. They are just categories of record
 * not all test are written - out of scope (time)
 * no blackbox tests (api level). Couple of curl commands at the moment.
-* transfer is done by url parameters. Could be made via for params. Depends on situation
+* transfer is done by url parameters. Could be made via form params. Depends on situation
 * no option to explicitly create person / account / bank. That was not in the task.
     However person+Account+bank can be created implicitly via transfer
 
